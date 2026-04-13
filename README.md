@@ -31,10 +31,12 @@ I paused the development to study the `asyncio` library and the `aiohttp` framew
 
 # Example Usage
 
+Input
 ```bash
 https://learnwebscraping.dev/practice/ecommerce/ 3 10
 ```
 
+Outpu
 ```bash
 
 ==================================================
