@@ -94,3 +94,25 @@ Output
    Stats: 7 links | 1 images
 ```
 
+# Setup
+
+**Prerequisites:**
+* Python 3.12 or higher
+* [uv](https://github.com/astral-sh/uv) (Extremely fast Python package installer and resolver)
+
+**Step 1: Clone the repository**
+\`\`\`bash
+git clone https://github.com/DimitarSivrev/Asynchronous-Web-Scraper-Project.git
+cd python-web-scraper
+\`\`\`
+
+**Step 2: Install dependencies**
+Using `uv`, you can install the dependencies defined in the `pyproject.toml` file and create a virtual environment in one step:
+\`\`\`bash
+uv sync
+\`\`\`
+
+**Step 3: Run the scraper**
+\`\`\`bash
+uv run main.py https://learnwebscraping.dev 3 10
+\`\`\`
