@@ -41,7 +41,7 @@ uv run main.py <target_url> [max_concurrency] [max_pages]
 
 Input
 ```bash
-https://learnwebscraping.dev/practice/ecommerce/ 3 10
+uv run main.py https://learnwebscraping.dev/practice/ecommerce/ 3 10
 ```
 
 Output
