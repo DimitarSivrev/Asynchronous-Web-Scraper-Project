@@ -30,12 +30,35 @@ I paused the development to study the `asyncio` library and the `aiohttp` framew
 
 # Usage
 
-Run the crawler by providing a target URL. You can optionally define the maximum number of concurrent network requests and the total page limit.
+Run the crawler by providing a target URL. You can optionally define the maximum number of concurrent network requests, the total page limit, and your desired output format.
 
 **Command Syntax:**
 ```bash
-uv run main.py <target_url> [max_concurrency] [max_pages]
+uv run main.py <target_url> [max_concurrency] [max_pages] [--output {console,json}]
 ```
+Examples:
+
+Default Crawl (3 concurrent requests, max 10 pages, prints to console):
+```Bash
+uv run main.py [https://example.com](https://example.com)
+```
+
+Custom Limits (5 concurrent requests, max 25 pages):
+```Bash
+uv run main.py [https://example.com](https://example.com) 5 25
+```
+
+Save Report to JSON (Using the -o or --output flag):
+```Bash
+uv run main.py [https://example.com](https://example.com) 5 25 -o json
+```
+
+Arguments & Flags:
+
+target_url: The base URL you want to scrape (required).
+max_concurrency: How many pages to fetch at the exact same time (default: 3).
+max_pages: The hard limit on how many total pages to process before finishing (default: 10).
+--output / -o: Choose the output format. Options are console or json (default: console).
 
 # Example Usage
 
