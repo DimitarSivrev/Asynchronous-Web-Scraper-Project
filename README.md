@@ -55,10 +55,10 @@ uv run main.py [https://example.com](https://example.com) 5 25 -o json
 
 Arguments & Flags:
 
-target_url: The base URL you want to scrape (required).
-max_concurrency: How many pages to fetch at the exact same time (default: 3).
-max_pages: The hard limit on how many total pages to process before finishing (default: 10).
---output / -o: Choose the output format. Options are console or json (default: console).
+- **target_url:** The base URL you want to scrape (required).
+- **max_concurrency:** How many pages to fetch at the exact same time (default: 3).
+- **max_pages:** The hard limit on how many total pages to process before finishing (default: 10).
+- **--output / -o:** Choose the output format. Options are console or json (default: console).
 
 # Example Usage
 
