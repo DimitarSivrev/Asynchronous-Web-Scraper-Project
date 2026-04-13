@@ -28,6 +28,14 @@ I paused the development to study the `asyncio` library and the `aiohttp` framew
 - Used `asyncio.Lock` to ensure that only one coroutine modifies the dictionary at a time.
 - Used `try/except` blocks to handle the `CancelledError`s.
 
+# Usage
+
+Run the crawler by providing a target URL. You can optionally define the maximum number of concurrent network requests and the total page limit.
+
+**Command Syntax:**
+```bash
+uv run main.py <target_url> [max_concurrency] [max_pages]
+```
 
 # Example Usage
 
