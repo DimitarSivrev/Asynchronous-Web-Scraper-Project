@@ -36,7 +36,7 @@ Input
 https://learnwebscraping.dev/practice/ecommerce/ 3 10
 ```
 
-Outpu
+Output
 ```bash
 
 ==================================================
